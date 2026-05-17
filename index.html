@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Larson Garage — профессиональный автосервис в Саратове. Ремонт автомобилей всех марок, компьютерная диагностика, шиномонтаж, замена масла и запчасти для иномарок и отечественных авто.">
+    <meta property="og:title" content="Larson Garage — Легковой автосервис в Саратове">
+    <meta property="og:description" content="Профессиональный ремонт автомобилей всех брендов. Диагностика, ремонт двигателей, МКПП, АКПП и ходовой части.">
+    <title>Larson Garage — Легковой автосервис в Саратове</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .heading-font {
+            font-family: 'Raleway', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px rgba(234, 88, 12, 0.15);
+        }
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(234, 88, 12, 0.3);
+        }
+        .mobile-call-button {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .mobile-call-button {
+                display: flex;
+            }
+        }
+        .rating-stars {
+            color: #EA580C;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <h1 class="heading-font text-2xl font-bold text-gray-900">Larson Garage</h1>
+            <a href="tel:+79518878470" class="hidden md:flex items-center gap-2 bg-orange-600 text-white px-6 py-2 rounded-lg hover:bg-orange-700 transition">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+                Позвонить
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <h2 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                    Профессиональный ремонт автомобилей любых марок
+                </h2>
+                <p class="text-lg md:text-xl text-gray-300 mb-4">
+                    Larson Garage — надёжный автосервис в Саратове с опытом ремонта иномарок и отечественных автомобилей. Компьютерная диагностика, ремонт двигателей, коробок передач, ходовой части и всё необходимое для вашего авто.
+                </p>
+                <p class="text-base text-orange-400 font-semibold mb-8">
+                    Легковой автосервис • Диагностика • Запчасти • Шиномонтаж
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="tel:+79518878470" class="btn-primary inline-flex items-center justify-center gap-2 bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-orange-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        +7 951 887 84 70
+                    </a>
+                    <a href="https://wa.me/79518878470?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" class="btn-primary inline-flex items-center justify-center gap-2 bg-green-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-600">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-5.031 1.378c-3.055 2.2-5.044 5.91-5.044 9.52 0 3.31 1.052 6.34 3.029 8.988l-.731 2.21 2.269-.734c2.555 1.696 5.508 2.591 8.46 2.591 5.303 0 9.794-3.556 11.236-8.888 2.113-7.614-1.77-15.165-8.514-17.08a9.873 9.873 0 00-5.254-.082zM23.12 0c-6.657 0-12.873 5.4-12.873 12.12 0 1.933.372 3.767 1.084 5.491L0 23.12l5.854-1.929c1.644.863 3.521 1.357 5.493 1.357 6.657 0 12.873-5.4 12.873-12.12S29.777 0 23.12 0z"/>
+                        </svg>
+                        WhatsApp
+                    </a>
+                    <a href="https://t.me/+79518878470" target="_blank" class="btn-primary inline-flex items-center justify-center gap-2 bg-blue-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-600">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295-.505 0-.418-.189-.589-.668l-1.33-4.365-3.105-.968c-.67-.215-.658-.686.15-.97l12.157-4.693c.563-.231 1.06.144.876 1.025z"/>
+                        </svg>
+                        Telegram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services/Brands Section -->
+    <section class="py-20 md:py-28 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    Обслуживаем автомобили всех марок
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl">
+                    Наш сервис специализируется на ремонте и диагностике легковых автомобилей любых производителей — от популярных иномарок до отечественных машин. Используем оригинальные запчасти и передовое диагностическое оборудование.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+                <div class="service-card bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="font-semibold text-gray-900 text-center">Компьютерная диагностика</h3>
+                </div>
+                <div class="service-card bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="font-semibold text-gray-900 text-center">Ремонт двигателей</h3>
+                </div>
+                <div class="service-card bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="font-semibold text-gray-900 text-center">Ремонт МКПП</h3>
+                </div>
+                <div class="service-card bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="font-semibold text-gray-900 text-center">Ремонт АКПП</h3>
+                </div>
+                <div class="service-card bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="font-semibold text-gray-900 text-center">Ремонт ходовой части</h3>
+                </div>
+                <div class="service-card bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="font-semibold text-gray-900 text-center">Замена масла</h3>
+                </div>
+                <div class="service-card bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="font-semibold text-gray-900 text-center">Шиномонтаж</h3>
+                </div>
+                <div class="service-card bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="font-semibold text-gray-900 text-center">Развал-схождение</h3>
+                </div>
+                <div class="service-card bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="font-semibold text-gray-900 text-center">Запчасти для авто</h3>
+                </div>
+                <div class="service-card bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="font-semibold text-gray-900 text-center">Автохимия</h3>
+                </div>
+                <div class="service-card bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="font-semibold text-gray-900
